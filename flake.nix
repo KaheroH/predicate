@@ -26,6 +26,10 @@
         devShell =
           with pkgs;
           mkShell {
+            packages = [
+              wasm-pack
+              bacon
+            ];
             buildInputs = [
               libiconv
               gcc
